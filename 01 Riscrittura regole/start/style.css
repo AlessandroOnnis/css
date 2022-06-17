@@ -1,0 +1,19 @@
+:root{
+    --black: #011212;
+    --orange: #ff8800;
+    --wsize: 100px;
+    --hsize: 100px;
+    --bradius: 50px;
+}
+body {
+    background-color: var(--black);
+}
+
+.ball {
+    width: var(--wsize);
+    height: var(--hsize);
+    background-color: var(--orange);
+    border-radius: var(--bradius);
+}
+
+    /*roba assai dispendiosa*/

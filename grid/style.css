@@ -1,0 +1,102 @@
+*{
+    border: 0;
+    padding: 0;
+    font-size: 25px;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    gap: 100px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 86%;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgb(13, 0, 43);
+}
+.result{
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    color: aliceblue;
+    font-size: 30px;
+    text-align: right;
+}
+.operazioni{
+    background-color: rgb(216, 218, 219);
+}
+.valori{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 1fr auto;
+    gap: 2px;
+}
+.invio{
+    grid-column: 4 / 5;
+    grid-row: 2 / 6;
+    background-color: pink;
+    border-radius: 0 0 10px 0;
+}
+button{
+    padding: 20px;
+    width: 100%;
+}
+button:hover{
+    background-color: rgb(229, 252, 98);
+    padding: 20px;
+    width: 100%;
+}
+
+/*tentativo 2 che cercavo di realizzare con la grid-area*/
+.container2{
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgb(13, 0, 43);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+    "1"
+    "2";
+}
+.result2{
+    display: grid;
+    color: white;
+    font-size: 30px;
+    grid-area: 1;
+    width: 90%;
+    height: 80px;
+    text-align: right;
+    align-items: center;
+}
+.valori2{
+    width: 500px;
+    height: 420px;
+    gap: 2px;
+    display: grid;
+    grid-area: 2;
+    grid-template-areas:
+    "a a a a"
+    "b b b c"
+    "b b b c"
+    "b b b c"
+    "b b b c";
+}
+.invio2{
+    grid-area: c;
+    background-color: pink;
+}
+button{
+    padding: 20px;
+    width: 100%;
+}
+button:hover{
+    background-color: rgb(229, 252, 98);
+    padding: 20px;
+    width: 100%;
+}

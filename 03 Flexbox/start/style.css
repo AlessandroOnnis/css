@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    background-color: #fff;
+}
+body{
+    background-color: #2b2b2b;
+    /*border: 1px solid black;*/
+    /*height: 800px;*/
+    /*height: 1500px;*/
+}
+aside{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    height: 100%;
+    flex-flow: 1 200px;
+    justify-content: space-between;     /*rimuoverlo eventualmente ed attivare flex: 1; sui .div*/
+    align-items: center;
+    /*border: 1px solid red;*/
+    text-align: center;
+}
+div{
+    padding: 10px 0;
+    margin: 20px 0;
+    /*flex: 1*/
+}
+.logo{
+    border: 1px solid green;
+   /*background-color: aliceblue;*/
+    width: 80%;
+}
+.logo > h1{
+    font-size: 20px;
+    width: 100%;
+}
+.navigation{
+    /*background-color: rgb(214, 214, 214);*/
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    margin: auto;
+}
+ul > li{
+    margin: 30px 0;
+}
+ul > li > a{
+    display: block;
+    text-decoration: none;
+    margin: 10px;
+    color: #2b2b2b;
+}
+a:hover{
+    color: #2b2bb2;
+    transition: 300ms;
+}
+.user{
+   /*background: yellow;
+    border: 1px solid green;*/
+    width: 80%;
+}
+
+
+/*avatar futuro*/
+
+img{ 
+    border: blue solid 3px;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+h2{
+    font-size: 20px;
+    width: 100%;
+}
